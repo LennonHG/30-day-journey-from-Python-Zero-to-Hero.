@@ -66,4 +66,3 @@ print(f"Fixed Info: {fixed_info}")
 print(f"First two items of updated tuples: {updated_info[:2]}") #Not including index 2
 print(f"Data type of new updated tuple: {type(updated_info)}")
 
-
