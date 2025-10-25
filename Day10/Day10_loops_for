@@ -1,0 +1,55 @@
+# Day 10, October 25, 2025
+# Loops - For
+
+"""
+Purpose: To execute a block of code once for every item in 
+a sequence (list, dictionary, string, etc.).
+"""
+
+# Guided Project: Progress Reviewer
+"""
+# Definte a list
+
+recent_topics = ["Strings", "Lists", "Tuples", "Sets", "Dictionaries"] # List are define using []
+
+# Iterate through the list with a FOR loop
+
+for topic in recent_topics:
+    print(f"Topic: {topic}")
+
+for i in range(5):
+    days_left_in_week = 5 - i
+    print(f"Loop {i+1}: {days_left_in_week} days remaining until the weekend!")
+
+"""
+
+# Self Project: Topic Scorer
+
+# Initialize Dictionary
+
+day_scores = {
+    "Strings": 10,
+    "Lists": 9,
+    "Tuples": 10,
+    "Sets": 8
+}
+total_score = 0
+
+
+#  Unpack and iterate over dictionary
+
+unpack_day_scores = day_scores.items()
+
+for key, value in unpack_day_scores:
+    if value >= 9:
+        print(f"Hero Status: {value} is solid with a score of {value/10}")
+    else: 
+        print(f"Review Needed: {key} score of {value/10} requires a review day")
+        
+    total_score += value
+
+print(f"Your Total Score: {total_score}")
+    
+
+
+
