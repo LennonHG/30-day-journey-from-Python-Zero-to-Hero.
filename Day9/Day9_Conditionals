@@ -1,0 +1,67 @@
+# Day 9, Conditionals, If, Elif, Else
+
+#Guided Project
+
+# Defining Input Variables
+"""
+user_clearance = int(input("Please enter clearance level: ") or 2)
+min_required = 4
+is_active = True
+
+# Conditional Logic
+
+if user_clearance >= 9 and is_active:
+    #Highest clearance check
+    print(f"Security Level 1: Full System Granted")
+elif user_clearance >= min_required and is_active:
+    # Standard Clearance Check
+    print(f"Security Level 2: Restricted Access Granted")
+elif not is_active:
+    # Specfic for inactive users
+    print(f"Access Denied: User is inactive")
+else:
+    #Catch All insufficent clearance
+    print("Access Denied: Clearance level to low")
+
+"""
+
+# Self Project: Score Evaluater 
+
+# Defintie Scores
+day_scores = {
+    "Strings": 10,
+    "Lists": 9,
+    "Tuples": 10,
+    "Sets": 9
+}
+
+grade_status = ""
+
+# Calcualte Avg score
+new_list = list(day_scores.values())
+
+def get_sum(lists):
+    sum = 0
+    for list in lists:
+        sum += list
+    return sum
+
+average_score = get_sum(new_list) / len(new_list)
+"""
+print(f"Sum of List: {get_sum(new_list)}")
+print(f"Total Items in List: {len(new_list)}")
+print(f"Average Score: {average_score}")
+"""
+# Finding Grade status with conditionals
+
+if average_score >= 9.5:
+    grade_status = "Hero: Ready for Production!"
+elif average_score >= 8:
+    grade_status = "Zero-to-Hero: Strong Progress, Keep Pushing!"
+else:
+    grade_status = "Mentor Check: Review Core Concepts."
+
+# Print output results
+
+print(f"Average Score: {average_score}")
+print(f"Grade Status: {grade_status}")
