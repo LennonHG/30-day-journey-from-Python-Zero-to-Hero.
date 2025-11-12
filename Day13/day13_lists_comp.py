@@ -1,6 +1,6 @@
 # Day 13, 30 October 2025, List Comprehensions (LCs)
 
-# [expression for item in list if condition]
+# Format: [expression for item in list if condition]
 
 # Guided Project: Unit Converter
 

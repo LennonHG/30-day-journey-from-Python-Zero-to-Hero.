@@ -41,3 +41,5 @@ def generate_status_line(user_name, days_complete, total_days):
 my_status = generate_status_line("Lennon G", 11, 30)
 
 print(my_status)
+
+
