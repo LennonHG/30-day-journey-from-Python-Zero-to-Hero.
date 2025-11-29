@@ -4,7 +4,6 @@ TypeError
 IndexError
 keyError
 """
-from curses.ascii import isdigit
 
 #Guided Project: Error Investigator
 
@@ -34,7 +33,7 @@ raw_grades = [10, "9", 8.5, "Error", 9.2, 7, -2, "-2"]
 def safe_grade_calculator(lists):
     clean_grades = [] #Defining an empty lists
     for grade in lists: #Loop through the lists
-        if isinstance(grade, (int, float)):
+        if isinstance(grade, (int, float)): #check if they are either int or float
             clean_grades.append(grade)
         elif grade.isdigit():
             clean_grades.append(int(grade))
